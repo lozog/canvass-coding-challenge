@@ -3,8 +3,11 @@
 # are even, false otherwise
 def checkAllDigitsEven(strnum):
 	for char in strnum:
-		if int(char) % 2 != 0:
-			return False
+		try:
+			if int(char) % 2 != 0:
+				return False
+		except ValueError: # handles negative sign
+			continue
 	return True
 
 # given a lower and upper bound, prints all numbers between these bounds where
