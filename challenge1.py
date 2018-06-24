@@ -10,8 +10,8 @@ def checkAllDigitsEven(strnum):
 			continue
 	return True
 
-# given a lower and upper bound, prints all numbers between these bounds where
-# each digit of the numbers is even
+# given a lower and upper bound, prints all numbers in the range [1000, 3000]
+# 	where each digit of the numbers is even
 def evenDigits(lower, upper):
 
 	# array of even digits
