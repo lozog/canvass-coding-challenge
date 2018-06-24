@@ -15,7 +15,7 @@ def checkAllDigitsEven(strnum):
 def evenDigits(lower, upper):
 
 	# array of even digits
-	# I know there are only 5 even digits, but this can be easily changed to the odd digits
+	# 	for odd digits, use x%2 == 1
 	evens = [x for x in range(10) if x%2 == 0]
 
 	for num in range(lower, upper+1):
@@ -25,7 +25,6 @@ def evenDigits(lower, upper):
 		print("{},".format(num), end='')
 
 	# remove the trailing comma and end with a newline
-	# the space after the \b is on purpose
-	print("\b ") 
+	print("\b ")
 
 evenDigits(1000, 3000)
